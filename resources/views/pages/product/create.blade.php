@@ -26,7 +26,7 @@
         <br>
         <h3>Categories</h3>
         @foreach ($categories as $category)
-            <input type="checkbox" name="categories[]" value={{ $category -> id }}>
+        <input type="checkbox" name="categories[]" value="{{ $category -> id }}">
             <label for="categories">{{ $category -> name }}</label>
             <br>            
         @endforeach
